@@ -2259,3 +2259,5 @@
 2025/06/02 09:14:51 [emerg] 1#1: host not found in upstream "server" in /etc/nginx/nginx.conf:10
 2025/06/02 09:16:04 [emerg] 1#1: host not found in upstream "server" in /etc/nginx/nginx.conf:10
 2025/06/02 09:17:16 [emerg] 1#1: host not found in upstream "server" in /etc/nginx/nginx.conf:10
+2025/06/02 09:18:26 [emerg] 1#1: host not found in upstream "server" in /etc/nginx/nginx.conf:10
+2025/06/02 09:19:36 [emerg] 1#1: host not found in upstream "server" in /etc/nginx/nginx.conf:10

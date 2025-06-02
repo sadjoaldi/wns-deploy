@@ -1,9 +1,8 @@
-import React from "react";
-import { useQuery, gql } from "@apollo/client";
+import { gql, useQuery } from "@apollo/client";
+import AddWilder from "./AddWilder";
 import "./App.css";
 import { CardRow, Container, Footer, Header } from "./styles/elements";
 import Wilder from "./Wilder";
-import AddWilder from "./AddWilder";
 
 const ALL_WILDERS = gql`
   query GetAllWilders {
@@ -16,14 +15,15 @@ const ALL_WILDERS = gql`
 `;
 
 export type WilderData = {
-  _id: string
-  name:string
-  city: string
-}
+  _id: string;
+  name: string;
+  city: string;
+};
 
 function App() {
-  
-  const { loading, error, data } = useQuery<{wilders:WilderData[]}>(ALL_WILDERS);
+  const { loading, error, data } = useQuery<{ wilders: WilderData[] }>(
+    ALL_WILDERS
+  );
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error : {error.message}</p>;
   return (
@@ -46,7 +46,7 @@ function App() {
       </Container>
       <Footer>
         <Container>
-          <p>&copy; 2020 Wild Code School</p>
+          <p>&copy; 2025 Wild Code School</p>
         </Container>
       </Footer>
     </div>
